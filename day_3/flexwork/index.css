@@ -1,0 +1,26 @@
+#container-box{
+    display: flex;
+    flex-direction:row-reverse;
+    height:100px;
+    width: 400px;
+    border: 2px solid brown;
+    gap: 2px;
+}
+.box{
+    border: 1px solid burlywood;
+    background-color: bisque;
+    height: auto;
+    width: 100px;
+}
+.box:nth-child(1),
+.box:nth-child(3){
+    background-color: aliceblue;
+}
+
+img{
+    height: 80px;
+    width: 96px;
+}
+span{
+    justify-content: center;
+}
