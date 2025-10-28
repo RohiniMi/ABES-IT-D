@@ -46,7 +46,10 @@ console.log(mapData);
 const filterOnprice = data.filter((product) => product.price <= 600);
 console.log(filterOnprice);
 
-const filterOnPrice = data.filter((product) =>
-    product.color.filter((color) => color === 'R')
+const filterOnPrice = data.filter((product) => {
+    return product.color.filter((color) => {
+        if (color === 'R') return product;
+    })
+}
 );
 console.log(filterOnPrice);
